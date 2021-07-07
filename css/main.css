@@ -1,0 +1,306 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+* { box-sizing: border-box }
+body{
+    padding: 0;
+    margin: 0;
+    background: #F9F9F9;
+}
+p{
+    font-family: 'FontAwesome';
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 1px;
+    padding: 240px;
+    background-color: #21201c;
+    position: relative;
+    font-family: "Ink Free";
+
+
+}
+
+span.pink-text{
+    color:#ea4c89;
+}
+
+h2{
+    color:black;
+    text-align: center;
+    font-family: "Microsoft Himalaya";
+    font-weight: lighter;
+    position: relative;
+    top:65px
+
+}
+h3{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.recent-post h3{
+    font-family: "Microsoft Himalaya";
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 0.5px solid #e0dfdf;
+}
+.contact h3{
+    font-family: "Microsoft Himalaya";
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 0.5px solid #e0dfdf;
+}
+.tags h3{
+    font-size: 30px;
+    font-family: "Microsoft Himalaya";
+    font-weight: bold;
+    border-bottom: 0.5px solid #e0dfdf;
+}
+h4{
+    font-weight: lighter;
+}
+h5{
+    font-weight: bold;
+
+}
+
+
+.profile-photo{
+    background-image:url("https://www.vhv.rs/dpng/d/164-1645859_selfie-clipart-groucho-glass-good-profile-hd-png.png");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    display: block;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    margin-left: -100px;
+    left: 50%;
+    position: absolute;
+    top: 450px;
+}
+.container{
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.posts{
+    width: 75%;
+    position: relative;
+    float: left;
+    top:100px;
+}
+.text-box{
+    width: 100%;
+    border: 1px solid #e0dfdf;
+    background-color: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 0 1px 1px #f1f0f0;
+    padding: 33px;
+}
+.text-box img{
+    width: 100%;
+}
+.post-meta{
+
+}
+.post-meta span{
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.post-meta span:after{
+    position: absolute;
+    margin-left: 5px;
+    content: " • ";
+
+}
+.post-meta span:first-child{
+    color:#ea4c89;
+    margin-left: 0;
+}
+.post-meta span:last-child {
+    margin-right: 0;
+}
+.post-meta span:last-child:after{
+    display: none;
+}
+.text-box h5{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 30px;
+}
+.recent-post-box h4{
+    padding-right: 50px;
+}
+.recent-post-box h5{
+    padding-right: 50px;
+}
+
+.button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #ea4c89;
+    border: none;
+    padding: 0.5rem 1.9rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    color: white;
+}
+
+.side-bar{
+    width: 25%;
+    position: relative;
+    float: right;
+    top:100px;
+    padding-left: 30px;
+}
+
+
+
+.search {
+    width: 100%;
+    position: relative
+}
+
+.searchTerm {
+    float: left;
+    width: 105%;
+    border: 1px solid #e0dfdf;
+    padding: 15px;
+    height: 40px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+    color: #ea4c89;
+}
+
+.searchButton {
+    position: absolute;
+    right: -50px;
+    width: 45px;
+    height: 40px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.search:before {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    background: #ea4c89;
+    text-align: center;
+    color: #fff;
+
+    font-family: 'FontAwesome';
+    content: '\f002';
+}
+
+
+.wrap{
+    width: 80%;
+    margin-left: 0% ;
+}
+.recent-post{
+    float: right;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 0.5px solid #e0dfdf;
+    margin-top: 30px;
+
+}
+.recent-post-box{
+
+}
+.mini-pict{
+ width: 85%;
+
+}
+
+.tags{
+    float: right;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 0.5px solid #e0dfdf;
+    margin-top: 30px;
+}
+
+.items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.items >li{
+    display: inline-block;
+    border: 0.6px solid #e0dfdf;
+    font-family: "Microsoft Himalaya";
+    font-size: 25px;
+    padding: 4px;
+
+}
+.contact{
+    float: right;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 0.5px solid #e0dfdf;
+    margin-top: 30px;
+}
+.inputPart {
+outline: none;
+}
+.emailTerm{
+    width: 70%;
+    padding: 15px;
+    height: 40px;
+    outline: none;
+    color: #9DBFAF;
+    text-align: center;
+}
+.email-button {
+    padding: 45px;
+}
+.pagination{
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 10px;
+}
+.pagination ul{
+    margin: 0;
+    padding: 0;
+}
+.pagination ul li{
+    pointer-events: auto;
+    cursor: pointer;
+    float: left;
+    height: 32px;
+    width: 32px;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 10px 0 0;
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+    color: #eb349e;
+}
+
+.pagination ul li.num-button.selected{
+    background: #ea4c89;
+    color: #fff;
+    border-color: #ea4c89;
+}
+.pagination ul li.num-button{
+    color: #333132;
+    border: 1px solid #333132;
+}
