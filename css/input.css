@@ -18,7 +18,7 @@ p {
 h1 {
   color: white;
   text-align: center;
-  margin-top: 1px;
+  margin-top: 0;
   padding: 240px;
   background-color: #21201c;
   position: relative;
@@ -53,7 +53,7 @@ span.pink-text {
   color: #ea4c89; }
 
 .profile-photo {
-  background-image: url("https://www.vhv.rs/dpng/d/164-1645859_selfie-clipart-groucho-glass-good-profile-hd-png.png");
+
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -64,7 +64,8 @@ span.pink-text {
   margin-left: -100px;
   left: 50%;
   position: absolute;
-  top: 450px; }
+  margin-top: -155px;
+}
 
 .container {
   width: 1140px;
@@ -125,9 +126,9 @@ span.pink-text {
   margin-top: 30px; }
 
 .recent-post-box h4 {
-  padding-right: 50px; }
+  padding-right: 0px; }
 .recent-post-box h5 {
-  padding-right: 50px; }
+  padding-right: 0px; }
 
 .button {
   pointer-events: auto;
@@ -139,7 +140,7 @@ span.pink-text {
   font-family: inherit;
   font-size: inherit;
   position: relative;
-  top: 1px;
+  top: -4px;
   display: inline-block;
   color: white; }
 
@@ -209,14 +210,15 @@ span.pink-text {
 .email-button {
   padding: 45px; }
 
-.pagination {
+
+.pagenumbering {
   width: 100%;
   margin-bottom: 50px;
   padding-top: 10px; }
-  .pagination ul {
+  .pagenumbering nav ul{
     margin: 0;
     padding: 0; }
-    .pagination ul li {
+    .pagenumbering nav ul li {
       pointer-events: auto;
       cursor: pointer;
       float: left;
@@ -229,13 +231,26 @@ span.pink-text {
       font-family: inherit;
       font-size: inherit;
       display: inline-block;
-      color: #ea4c89; }
-      .pagination ul li.num-button {
-        color: #333132;
-        border: 1px solid #333132; }
-        .pagination ul li.num-button.selected {
-          background: #ea4c89;
-          color: #fff;
-          border-color: #ea4c89; }
+      color: #333132;
+      border: 1px solid #333132;}
+      .pagenumbering nav ul li.active {
+        background-color: #ea4c89;
+        color: #fff;
+        border-color: #ea4c89;
+      }
+.pagenumbering nav ul li.active a{
+      color: #fff;
+
+
+    }
+.pagenumbering nav ul li a{
+  color: #333132;
+  text-decoration:none;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
 
 /*# sourceMappingURL=input.css.map */
