@@ -16,8 +16,7 @@ $data2 = $data2 ?? NULL;
 <body>
 <div class="upside">
     <div>
-        <h1 class="name-text-box"><?php echo $publicData->name ;?></h1>
-
+        <h1 class="name-text-box"><a href="<?php echo base_url('/home')?>"><?php echo $publicData->name ;?></a> </h1>
     </div>
     <img src="<?php echo $publicData->profile_photo; ?>" class="profile-photo">
 
@@ -33,20 +32,26 @@ $data2 = $data2 ?? NULL;
     <div class="posts">
         <div class="post-group">
             <div class="text-box">
+                <h5>
                 <?php
-                    if($data){
+                    echo (isset($_GET['q'])) ? ' Search results for "' . $_GET['q'] . '"' : '' ;
+
+                ?>
+                </h5>
+                <?php
+                if($data){
                         foreach ($data as $post) {
                             echo '                            
                                 <img src = "/images/'.$post["image"].'" >
                                     <div class="post-meta" >
                                         <span class="category" > '.$post['category'].'</span >
                                         <span class="post-date" > '.$post["post_added_date"].' </span >
-                                        <span class="post-date" > '.$publicData->name.'</span >
+                                        <span class="author" > '.$publicData->name.'</span >
                                     </div >
                                     <h5 > '.$post["header"].'</h5 >
-                                    <p >'.$post["body"].'</p>                                    
-                                    <h2 class="button" > Read more </h2 >
-                            ';
+                                    <p>'.$post["body"].'</p>                                    
+                                    <h2><a href=" '.base_url("/post/".$post['post_id']).'" class="button"> Read more</a> </h2 >
+                            '  ;
                         }
                     }
                 ?>
@@ -64,9 +69,9 @@ $data2 = $data2 ?? NULL;
     <div class="side-bar">
         <div class="wrap">
             <div class="search">
-                <form method=post action="<?php echo base_url("/home/search");?>">
+                <form method="get" action="<?php echo base_url("/home");?>">
                     <div>
-                        <input type="text" class="searchTerm" name="search" placeholder="Search name here">
+                        <input type="text" class="searchTerm" name="q" placeholder="Search name here"<?php echo (isset($_GET['q'])) ? ' value="' . $_GET['q'] . '"' : '' ?>>
                     </div>
                     <button type="submit" class="searchButton"></button>
                 </form>
@@ -89,8 +94,7 @@ $data2 = $data2 ?? NULL;
                                      </div>
                                 </h4>
                                 <h5
-                                     style="font-size: 17px;">
-                                     '. $post["header"].'
+                                     style="font-size: 17px;"><a href="'. base_url("/post/".$post['post_id']).'">  '. $post["header"].'</a>
                                  </h5>
                         ';
                     }
