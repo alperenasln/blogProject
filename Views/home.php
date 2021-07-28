@@ -42,7 +42,7 @@ $data2 = $data2 ?? NULL;
                 if($data){
                         foreach ($data as $post) {
                             echo '                            
-                                <img src = "/images/'.$post["image"].'" >
+                                <img src = "'.base_url('/images/'.$post["image"]).'" >
                                     <div class="post-meta" >
                                         <span class="category" > '.$post['category'].'</span >
                                         <span class="post-date" > '.$post["post_added_date"].' </span >
@@ -86,7 +86,7 @@ $data2 = $data2 ?? NULL;
                 if($data2){
                     foreach ($data2 as $post) {
                         echo '
-                                <img src="/images/'. $post["image"].'" class="mini-pict">                
+                                <img src = "'.base_url('/images/'.$post["image"]).'" class="mini-pict">                
                                 <h4>
                                      <div class="post-meta">
                                          <span class="category">'.$post['category'].'</span>

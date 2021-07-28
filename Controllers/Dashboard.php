@@ -56,7 +56,7 @@ class Dashboard extends Controller{
                'category'=>$this->request->getVar('category'),
                'image'=>$imageName
                 ]);
-            return $this->response->redirect('/dashboard');
+            return $this->response->redirect(base_url("/dashboard"));
         }
     }
     public function editEntry($post_id=null){
@@ -111,13 +111,13 @@ class Dashboard extends Controller{
 
 
             $postModel->update($post_id,$data);
-            return $this->response->redirect('/dashboard');
+            return $this->response->redirect(base_url('/dashboard'));
         }
     }
     public function deleteEntry($post_id){
         $postModel = new PostModel();
         $postModel->where('post_id',$post_id)->delete($post_id);
-        return $this->response->redirect('/dashboard');
+        return $this->response->redirect(base_url('/dashboard'));
     }
     public function editMe()
     {
@@ -145,7 +145,7 @@ class Dashboard extends Controller{
 
 
             $publicUserModel->update($id, $data);
-            return redirect()->to('/dashboard');
+            return redirect()->to(base_url('/dashboard'));
         }
         //$data['pagination_link'] = $postModel->pager;
         return view('editMe',$data);

@@ -9,7 +9,7 @@ use CodeIgniter\Filters\FilterInterface;
     {
         // TODO: Implement before() method.
         if(!session()->get('logged_in')){
-            return redirect()->to('/login');
+            return base_url('/login');
         }
 
     }

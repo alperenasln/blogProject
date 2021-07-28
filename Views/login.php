@@ -13,7 +13,7 @@
 <body>
 <div class ="main" id="login">
     <p class="sign" align="center">Sign in</p>
-    <form class="form1" action="/login/authorization" >
+    <form class="form1" action="<?php echo base_url("/login/authorization");?>" >
         <input class="un " id="name" name="username" type="text" align="center" placeholder="Username" value="<?=set_value('username') ?>">
         <input class="pass" id="password" name="password" type="password" align="center" placeholder="Password">
         <input class="submit" name="submit" type="submit" align="center" value="Sign in">

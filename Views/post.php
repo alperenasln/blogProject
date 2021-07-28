@@ -40,7 +40,7 @@ $publicData = $publicData ?? NULL;
                 if($data){
 
                         echo '                            
-                                <img src = "/images/'.$data["image"].'" >
+                                <img src = "'.base_url('/images/'.$data["image"]).'" >
                                     <div class="post-meta" >
                                         <span class="category" > '.$data['category'].'</span >
                                         <span class="post-date" > '.$data["post_added_date"].' </span >

@@ -47,9 +47,9 @@ $pager = $pager ?? NULL;
                                     <td>'.$post["header"].'</td>
                                     <td>'.$post["body"].'</td>
                                     <td>'.$post["post_added_date"].'</td>  
-                                    <td><img src="/images/'.$post["image"].'" width="150"></td>
-                                    <td><a href="/dashboard/editEntry/'.$post["post_id"].'" class="btn btn-sm btn-warning">Edit</a></td>
-                                    <td><a href="/dashboard/deleteEntry/'.$post["post_id"].'" class="btn btn-sm btn-danger">Delete</a></td>                                
+                                    <td><img src = "'.base_url('/images/'.$post["image"]).'"  width="150"></td>
+                                    <td><a href="'.base_url("dashboard/editEntry/".' '.$post["post_id"]).'" class="btn btn-sm btn-warning">Edit</a></td>
+                                    <td><a href="'.base_url("dashboard/deleteEntry/".' '.$post["post_id"]).'" class="btn btn-sm btn-danger">Delete</a></td>                                
                                 </tr>';
                             }
                         }
