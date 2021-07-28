@@ -1,0 +1,50 @@
+.posts td{
+    max-width: 18em;
+
+    white-space: nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+
+
+}
+.pagenumbering {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top: 10px; }
+.pagenumbering nav ul{
+    margin: 0;
+    padding: 0; }
+.pagenumbering nav ul li {
+    pointer-events: auto;
+    cursor: pointer;
+    float: left;
+    height: 32px;
+    width: 32px;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 10px 0 0;
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+    color: #333132;
+    border: 1px solid #333132;}
+.pagenumbering nav ul li.active {
+    background-color: #0069D9;
+    color: #fff;
+    border-color: #0069D9;
+}
+.pagenumbering nav ul li.active a{
+    color: #fff;
+
+
+}
+.pagenumbering nav ul li a{
+    color: #333132;
+    text-decoration:none;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

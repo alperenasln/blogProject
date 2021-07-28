@@ -1,0 +1,280 @@
+@import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Source+Sans+Pro:wght@300&display=swap');
+$primaryColor: #F9F9F9;
+$topBackgroundColor: #21201c;
+$shinyWhite: #e0dfdf;
+$pinkyButton: #ea4c89;
+* { box-sizing: border-box }
+
+body {
+  background: $primaryColor;
+  padding: 0;
+  margin: 0;
+}
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+  color: white;
+  text-align: center;
+  padding: 240px;
+  background-color: $topBackgroundColor;
+  position: relative;
+  font-family: 'Ink Free';
+  font-size: 65px;
+}
+h2{
+  color: black;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
+  position: relative;
+  top:65px;
+}
+h3{
+  text-align: center;
+  margin-top: 20px;
+}
+.style{
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  border-bottom: 0.5px solid $shinyWhite;
+}
+.recent-post h3{
+  @extend .style
+}
+.contact h3{
+  @extend .style}
+.tags h3{
+  @extend .style
+}
+
+h4{
+  font-weight: lighter;
+}
+h5{
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+span.pink-text{
+  color: $pinkyButton;
+}
+.profile-photo{
+  background-image:url("https://www.vhv.rs/dpng/d/164-1645859_selfie-clipart-groucho-glass-good-profile-hd-png.png");
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  margin-left: -100px;
+  left: 50%;
+  position: absolute;
+  top: 450px;
+}
+.container{
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.posts{
+  width:75%;
+  position: relative;
+  float: left;
+  top: 100px;
+}
+
+.text-box{
+  width: 100%;
+  border: 1px solid $shinyWhite;
+  background-color: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 0 1px 1px #f1f0f0;
+  padding: 33px;
+
+  img{
+    width: 100%;
+  }
+  h5{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 30px;
+  }
+}
+.post-meta{
+  span{
+    display:inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    &:after{
+      position: absolute;
+      margin-left: 5px;
+      content: " • ";
+      opacity: 0.5;
+      color: black;
+    }
+    &:first-child{
+      color: $pinkyButton;
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+.side-bar{
+  width: 25%;
+  position: relative;
+  float: right;
+  top:100px;
+  padding-left: 30px;
+}
+
+.recent-post{
+  float: right;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  border: 0.5px solid $shinyWhite;
+  margin-top: 30px;
+
+}
+.recent-post-box{
+  h4{
+    padding-right: 50px;
+  }
+  h5{
+    padding-right: 50px;
+  }
+}
+.button{
+  pointer-events: auto;
+  cursor: pointer;
+  background: $pinkyButton;
+  border: none;
+  padding: 0.5rem 1.9rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  color: white;
+}
+.wrap{
+  width: 80%;
+  margin-left: 0%;
+}
+.search{
+  width: 100%;
+  position: relative;
+  :before{
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    background: $pinkyButton;
+    text-align: center;
+    color: #fff;
+    font-family: "FontAwesome";
+    content: '\f002';
+  }
+}
+.searchTerm{
+  float: left;
+  width: 105%;
+  border: 1px solid $shinyWhite;
+  padding: 15px;
+  height: 40px;
+  outline: none;
+  color: #9DBFAF;
+  :focus{
+    color: $pinkyButton;
+  }
+}
+.searchButton{
+  position: absolute;
+  right: -50px;
+  width: 45px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+.mini-pict{
+  width: 85%;
+}
+.tags{
+  @extend .recent-post
+}
+.items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  >li{
+    display: inline-block;
+    border: 0.6px solid $shinyWhite;
+    font-family: "Microsoft Himalaya";
+    font-size: 25px;
+    padding: 4px;
+  }
+}
+.contact{
+  @extend .recent-post;
+}
+.inputPart{
+  outline: none;
+}
+.emailTerm{
+  width: 70%;
+  padding: 15px;
+  height: 40px;
+  outline: none;
+  color: #9DBFAF;
+  text-align: center;
+}
+.email-button{
+  padding: 45px;
+}
+.pagination{
+  width: 100%;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      pointer-events: auto;
+      cursor:pointer;
+      float: left;
+      height: 32px;
+      width: 32px;
+      border: none;
+      text-align: center;
+      line-height: 30px;
+      margin: 0 10px 0 0;
+      font-family: inherit;
+      font-size: inherit;
+      display: inline-block;
+      color: $pinkyButton;
+      &.num-button{
+        color: #333132;
+        border: 1px solid #333132;
+        &.selected{
+          background: $pinkyButton;
+          color: #fff;
+          border-color: $pinkyButton;
+        }
+      }
+
+    }
+  }
+}
