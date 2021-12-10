@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'https://alperenaslan.betik.net/ci4/public/';
+	public $baseURL = 'https://alperenasln.github.io/blogProject/';
 
 	/**
 	 * --------------------------------------------------------------------------
