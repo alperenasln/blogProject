@@ -32,9 +32,9 @@ class Database extends Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'alperenaslan.betik.net',
-		'username' => 'btksys21_alperenaslan',
-		'password' => 'fFUx34YEP6',
+		'hostname' => 'localhost',
+		'username' => 'root',
+		'password' => '',
 		'database' => 'btksys21_db2',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
